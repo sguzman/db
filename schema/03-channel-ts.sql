@@ -6,8 +6,6 @@ create table youtube.timeseries.channels
 	id bigserial not null
 		constraint channels_channels_id_fk
 			references youtube.data.channels,
-	subs int,
-	vids int,
 	views int
 );
 
